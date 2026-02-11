@@ -7,14 +7,9 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY ?? "";
 const config: HardhatUserConfig = {
   solidity: "0.8.20",
   networks: {
-    liskSepolia: {
-      url: "https://rpc.sepolia-api.lisk.com",
-      chainId: 4202,
-      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
-    },
-    arcTestnet: {
-      url: "https://rpc.testnet.arc.network",
-      chainId: 5042002,
+    celoSepolia: {
+      url: "https://forno.celo-sepolia.celo-testnet.org",
+      chainId: 11142220,
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
     },
   },
